@@ -1,0 +1,82 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panchakarma Retreat — Luxe</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1512;--bg2:#16201a;--ink:#f1ead9;--muted:#a9ad9f;--gold:#d4a85a;--line:rgba(212,168,90,.25)}
+:root[data-theme="light"]{--bg:#f6f0e2;--bg2:#ece3cf;--ink:#1d241f;--muted:#5d6358;--gold:#9a6b1c;--line:rgba(154,107,28,.3)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f0e2;--bg2:#ece3cf;--ink:#1d241f;--muted:#5d6358;--gold:#9a6b1c;--line:rgba(154,107,28,.3)}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Manrope,sans-serif}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:"Playfair Display",serif;font-weight:500;margin:0;line-height:1.1;text-wrap:balance}
+.w{max-width:1120px;margin:0 auto;padding:0 16px}@media(min-width:760px){.w{padding:0 32px}}
+.c{text-align:center}
+.lbl{color:var(--gold);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700}
+.orn{width:60px;height:1px;background:var(--gold);margin:22px auto}
+.btn{display:inline-block;padding:15px 30px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;text-transform:uppercase;font-size:.75rem;font-weight:700;transition:.2s}
+.btn:hover,.btn.f{background:var(--gold);color:#14100a}
+.hero{position:relative;min-height:100vh;display:grid;place-items:center;color:#f1ead9;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(8,14,11,.65),rgba(8,14,11,.92))}
+.hero .in{position:relative;z-index:1;padding:80px 16px;max-width:820px}
+.hero .lbl{color:#e3bd73}.hero .orn{background:#e3bd73}
+.hero h1{font-size:clamp(2.8rem,8vw,6rem)}.hero h1 i{color:#e3bd73}
+.hero p{opacity:.85;font-size:1.1rem;margin:0 auto 34px;max-width:46ch}
+.hero .btn{color:#e3bd73;border-color:#e3bd73}.hero .btn.f{background:#e3bd73;color:#14100a}
+.hero .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.meta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin-top:40px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+section{padding:100px 0}
+h2{font-size:clamp(2rem,5vw,3.3rem)}
+.intro p{color:var(--muted);font-size:1.1rem;max-width:60ch;margin:0 auto}
+.pillars{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:56px}@media(min-width:760px){.pillars{grid-template-columns:repeat(3,1fr)}}
+.pillars div{background:var(--bg);padding:36px 28px}.pillars h3{font-size:1.4rem;margin:12px 0 8px}.pillars p{color:var(--muted);margin:0;font-size:.95rem}
+.pillars svg{width:32px;height:32px;color:var(--gold)}
+.alt{background:var(--bg2)}
+.feature{display:grid;gap:40px;align-items:center}@media(min-width:900px){.feature{grid-template-columns:1fr 1fr;gap:72px}}
+.feature img{aspect-ratio:4/5;object-fit:cover;width:100%;border:1px solid var(--line);padding:10px}
+.feature ul{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:0}
+.feature li{padding:13px 0;border-bottom:1px solid var(--line);display:flex;gap:14px}.feature li::before{content:"✦";color:var(--gold);font-size:.8rem;padding-top:4px}
+.scroll{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin-top:48px}
+.scroll img{flex:0 0 78%;aspect-ratio:3/2;object-fit:cover;scroll-snap-align:start;background:var(--bg2)}@media(min-width:760px){.scroll img{flex-basis:44%}}
+.plans{display:grid;gap:20px;margin-top:56px}@media(min-width:760px){.plans{grid-template-columns:1fr 1fr}}
+.plan{border:1px solid var(--line);padding:40px 32px;text-align:center}.plan.f{border-color:var(--gold);background:linear-gradient(180deg,rgba(212,168,90,.1),transparent)}
+.plan .amt{font-family:"Playfair Display",serif;font-size:3.8rem;color:var(--gold);margin:14px 0 4px}.plan p{color:var(--muted);margin:0 0 28px}
+.team{display:grid;gap:36px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));margin-top:56px}
+.team img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 18px;border:1px solid var(--gold);padding:5px;background:var(--bg2)}
+.team h3{font-size:1.15rem}.team p{color:var(--muted);font-size:.85rem;margin:4px 0 0}
+.quote{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(1.5rem,3.4vw,2.4rem);max-width:28ch;margin:0 auto;line-height:1.3}
+.vids{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin-top:48px}
+.vids a{position:relative;display:block;aspect-ratio:16/10;overflow:hidden;border:1px solid var(--line)}.vids img{width:100%;height:100%;object-fit:cover;opacity:.75;transition:.3s}.vids a:hover img{opacity:1}
+.vids span{position:absolute;left:12px;bottom:10px;right:12px;color:#fff;font-size:.85rem;font-weight:500;text-shadow:0 1px 6px #000}
+footer{padding:80px 0;border-top:1px solid var(--line)}footer p{color:var(--muted)}
+</style></head><body>
+<header class="hero"><img src="https://www.hua.edu/wp-content/uploads/2024/12/A-Rejuvenating-Journey.webp" alt=""><div class="in c">
+<div class="lbl">Vaidyaratnam · Thrissur · Kerala</div><div class="orn"></div>
+<h1>The <i>Panchakarma</i> Retreat 2027</h1><p>Fifteen days of personal Ayurvedic care, for a group of only twenty.</p>
+<div class="row"><a class="btn f" href="#plans">Reserve a seat</a><a class="btn" href="#about">Discover</a></div>
+<div class="meta"><span>Feb 13 – 28, 2027</span><span>15 Days</span><span>20 Guests</span></div></div></header>
+<section id="about" class="intro"><div class="w c"><div class="lbl">The Retreat</div><div class="orn"></div><h2>Ayurveda, received personally</h2><p style="margin-top:24px">Not a classroom, not a course — a restorative stay in partnership with the California College of Ayurveda, with a treatment plan designed around your constitution, health concerns, strength and needs.</p>
+<div class="pillars">
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21c-4-3-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-3 8-7 11z"/></svg><h3>Built around you</h3><p>Individual consultation and therapies — never one-size-fits-all.</p></div>
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg><h3>Daily physician care</h3><p>Experienced vaidyas follow up and adjust your treatment every day.</p></div>
+<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><h3>Time to truly rest</h3><p>Two weeks away from digital overload, with everything arranged.</p></div></div></div></section>
+<section class="alt"><div class="w feature"><img src="https://www.hua.edu/wp-content/uploads/2024/04/IMG_0390.jpg" alt="" loading="lazy"><div><div class="lbl">Included</div><h2 style="margin-top:14px">Every detail, cared for</h2><ul>
+<li>Consultations &amp; individualized Panchakarma therapies</li><li>Daily follow-up and treatment adjustments</li><li>Therapeutic vegetarian meals &amp; herbal support</li><li>Daily yoga, breathwork, Marma and Kerala therapies</li><li>Herbal gardens, Vaidyaratnam Museum &amp; temples</li><li>Kochi airport transfers, local transport &amp; excursions</li></ul></div></div></section>
+<section><div class="w c"><div class="lbl">Moments</div><div class="orn"></div><h2>From past retreats</h2></div><div class="w"><div class="scroll">
+<img src="https://www.hua.edu/wp-content/uploads/2024/12/IMG_0312-1.jpg" alt="" loading="lazy"><img src="https://www.hua.edu/wp-content/uploads/2024/04/IMG_0458.jpg" alt="" loading="lazy"><img src="https://www.hua.edu/wp-content/uploads/2024/12/IMG_0348-1.jpg" alt="" loading="lazy"><img src="https://www.hua.edu/wp-content/uploads/2024/04/IMG_0464.jpg" alt="" loading="lazy"><img src="https://www.hua.edu/wp-content/uploads/2024/12/IMG_0442.jpg" alt="" loading="lazy"></div></div></section>
+<section id="plans" class="alt"><div class="w c"><div class="lbl">Reserve</div><div class="orn"></div><h2>Choose your stay</h2>
+<div class="plans"><div class="plan"><div class="lbl">Shared</div><div class="amt">$2,500</div><p>Twin room · per person</p><a class="btn" href="#">Reserve</a></div>
+<div class="plan f"><div class="lbl">Single</div><div class="amt">$3,000</div><p>Private room · per person</p><a class="btn f" href="#">Reserve</a></div></div>
+<p style="color:var(--muted);font-size:.85rem;margin-top:24px">$200 deposit holds your seat · Airfare, visa fees and personal expenses not included</p></div></section>
+<section><div class="w c"><div class="lbl">Your Care Team</div><div class="orn"></div><h2>Guided by master vaidyas</h2><div class="team">
+<div><img src="https://www.hua.edu/wp-content/uploads/2026/11/Astavaidyan-Dr.-E.T.-Krishnan-Moos.jpg" alt="" loading="lazy"><h3>Astavaidyan Dr. E.T. Krishnan Moos</h3><p>Executive Director, Vaidyaratnam</p></div>
+<div><img src="https://www.hua.edu/wp-content/uploads/2026/03/Dr.-Mahadevan-Seetharaman-1.png" alt="" loading="lazy"><h3>Dr. Mahadevan Seetharaman</h3><p>Dean, California College of Ayurveda</p></div>
+<div><img src="https://www.hua.edu/wp-content/uploads/2026/03/Vaidya-Rupali-Panse.png" alt="" loading="lazy"><h3>Vaidya Rupali Panse</h3><p>Ayurvedic physician</p></div>
+<div><img src="https://www.hua.edu/wp-content/uploads/2026/03/Vaidya-Vandana-Baranwal.png" alt="" loading="lazy"><h3>Vaidya Vandana Baranwal</h3><p>Ayurvedic physician</p></div></div></div></section>
+<section class="alt"><div class="w c"><p class="quote">“Giving your body and mind the time, environment and support needed for a meaningful restorative experience.”</p>
+<div class="vids">
+<a href="https://youtu.be/l_raNQoQgRw"><img src="https://i.ytimg.com/vi/l_raNQoQgRw/sddefault.jpg" alt="" loading="lazy"><span>▶ Karthik ShyamSundar</span></a>
+<a href="https://youtu.be/apQVVuE13oE"><img src="https://i.ytimg.com/vi/apQVVuE13oE/sddefault.jpg" alt="" loading="lazy"><span>▶ Rajendra &amp; Daxa Patel</span></a>
+<a href="https://youtu.be/JNhNVPj3p8A"><img src="https://i.ytimg.com/vi/JNhNVPj3p8A/sddefault.jpg" alt="" loading="lazy"><span>▶ Dr. Aarti Joshi</span></a>
+<a href="https://youtu.be/n2quKYyKZCo"><img src="https://i.ytimg.com/vi/n2quKYyKZCo/sddefault.jpg" alt="" loading="lazy"><span>▶ Dr. Ketan Goswami</span></a></div></div></section>
+<footer><div class="w c"><h2>Have a question?</h2><p>407 545 5057 · info@hua.edu</p><a class="btn f" href="tel:4075455057">Request a callback</a></div></footer>
+</body></html>

@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panchakarma Retreat — Editorial</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf8f3;--ink:#1c1a17;--muted:#6b645a;--line:#ddd5c8;--accent:#b4532a;--panel:#f1ebe1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161412;--ink:#efe9df;--muted:#a69e92;--line:#332e29;--accent:#e07a4c;--panel:#201d1a}}
+:root[data-theme="dark"]{--bg:#161412;--ink:#efe9df;--muted:#a69e92;--line:#332e29;--accent:#e07a4c;--panel:#201d1a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,sans-serif}
+img{display:block;max-width:100%}a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:400;margin:0;line-height:1.05;text-wrap:balance}
+.w{max-width:1200px;margin:0 auto;padding:0 16px}@media(min-width:760px){.w{padding:0 40px}}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--ink);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.top img{height:30px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:14px 24px;text-decoration:none;font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border:0;cursor:pointer;font-family:inherit}
+.btn.alt{background:var(--accent);color:#fff}
+.hero{display:grid;gap:32px;padding:48px 0 64px;border-bottom:1px solid var(--line)}
+@media(min-width:900px){.hero{grid-template-columns:1.2fr 1fr;align-items:end;gap:56px}}
+.kicker{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.hero h1{font-size:clamp(3rem,9vw,7.2rem);margin:18px 0 24px;letter-spacing:-.02em}
+.hero h1 i{color:var(--accent)}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:44ch;margin:0 0 28px}
+.hero figure{margin:0}.hero figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
+figcaption{font-size:.8rem;color:var(--muted);margin-top:8px;font-style:italic}
+.strip{display:grid;grid-template-columns:repeat(2,1fr);border-bottom:1px solid var(--line)}
+@media(min-width:760px){.strip{grid-template-columns:repeat(4,1fr)}}
+.strip div{padding:24px 0;border-right:1px solid var(--line);padding-left:16px}.strip div:first-child{padding-left:0}
+.strip small{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.strip b{font-family:Fraunces,serif;font-weight:400;font-size:1.6rem}
+.sec{display:grid;gap:24px;padding:80px 0;border-bottom:1px solid var(--line)}
+@media(min-width:900px){.sec{grid-template-columns:220px 1fr;gap:56px}}
+.num{font-family:Fraunces,serif;font-size:4rem;color:var(--accent);line-height:1}
+.sec h2{font-size:clamp(2rem,4.5vw,3.4rem);margin-bottom:24px}
+.cols{columns:1;column-gap:48px;color:var(--muted)}@media(min-width:760px){.cols{columns:2}}
+.cols p{margin:0 0 16px;break-inside:avoid}
+.cols p:first-child::first-letter{font-family:Fraunces,serif;float:left;font-size:4.2rem;line-height:.85;padding:6px 10px 0 0;color:var(--ink)}
+blockquote{margin:40px 0 0;font-family:Fraunces,serif;font-size:clamp(1.4rem,3vw,2rem);font-style:italic;border-left:3px solid var(--accent);padding-left:24px;line-height:1.3}
+ol.list{list-style:none;margin:0;padding:0;counter-reset:i;display:grid;gap:0}@media(min-width:760px){ol.list{grid-template-columns:1fr 1fr;column-gap:48px}}
+ol.list li{counter-increment:i;padding:16px 0;border-top:1px solid var(--line);display:flex;gap:16px}
+ol.list li::before{content:counter(i,decimal-leading-zero);font-family:Fraunces,serif;color:var(--accent);min-width:28px}
+.reasons{display:grid;gap:32px}@media(min-width:760px){.reasons{grid-template-columns:1fr 1fr}}
+.reasons h3{font-size:1.6rem;margin-bottom:8px}.reasons p{margin:0;color:var(--muted)}
+.price{display:grid;gap:32px}@media(min-width:900px){.price{grid-template-columns:1fr 1fr}}
+.tier{border:1px solid var(--ink);padding:28px}.tier h3{font-size:1.3rem}.tier .amt{font-family:Fraunces,serif;font-size:3.6rem;margin:10px 0}
+.tier ul{padding-left:18px;color:var(--muted);margin:0 0 24px}
+.tier.feat{background:var(--ink);color:var(--bg)}.tier.feat ul{color:inherit;opacity:.8}.tier.feat .btn{background:var(--accent);color:#fff}
+.fine{font-size:.85rem;color:var(--muted);margin-top:20px}
+.people{display:grid;gap:28px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.people img{aspect-ratio:3/4;object-fit:cover;width:100%;filter:grayscale(1);transition:.3s;background:var(--panel)}.people div:hover img{filter:none}
+.people h3{font-size:1.2rem;margin-top:12px}.people p{margin:2px 0 0;color:var(--muted);font-size:.85rem}
+.mosaic{display:grid;gap:8px;grid-template-columns:repeat(2,1fr)}@media(min-width:760px){.mosaic{grid-template-columns:repeat(3,1fr)}}
+.mosaic img{aspect-ratio:1;object-fit:cover;width:100%;background:var(--panel)}
+.vids{display:grid;gap:0}.vids a{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-top:1px solid var(--line);text-decoration:none;font-family:Fraunces,serif;font-size:1.35rem}.vids a:hover{color:var(--accent)}.vids span{font-family:Inter;font-size:.8rem;color:var(--muted);white-space:nowrap}
+.end{padding:96px 0;text-align:center}.end h2{font-size:clamp(2.4rem,7vw,5rem);margin-bottom:24px}.end p{color:var(--muted)}
+</style></head><body><div class="w">
+<div class="top"><img src="https://www.hua.edu/wp-content/themes/hua/img/menu-logo.webp" alt="Hindu University of America"><span>Retreat · Kerala · 2027</span><a class="btn" href="#reserve">Reserve</a></div>
+<header class="hero"><div><div class="kicker">Vaidyaratnam Panchakarma Retreat</div><h1>Restore &amp; <i>rejuvenate</i></h1><p>Fifteen days of personal Ayurvedic care in Thrissur, Kerala — in partnership with the California College of Ayurveda.</p><a class="btn alt" href="#reserve">Reserve your seat</a></div>
+<figure><img src="https://www.hua.edu/wp-content/uploads/2024/04/IMG_0390.jpg" alt="Retreat participant at Vaidyaratnam"><figcaption>A previous retreat at Vaidyaratnam, Thrissur.</figcaption></figure></header>
+<div class="strip"><div><small>Dates</small><b>Feb 13–28</b></div><div><small>Length</small><b>15 days</b></div><div><small>Group</small><b>20 guests</b></div><div><small>Fee</small><b>$3,000</b></div></div>
+<section class="sec"><div class="num">01</div><div><h2>Ayurveda, received personally</h2><div class="cols"><p>Step away from the demands of daily life and spend 15 days focused on your health, balance and renewal at Vaidyaratnam in Thrissur, Kerala.</p><p>Each participant receives an individualized Ayurvedic consultation and a treatment plan built around their constitution, health concerns, strength and needs.</p><p>Experienced Ayurvedic physicians and therapists guide and monitor your care throughout, with daily follow-up and adjustments.</p><p>The group is limited to 20 participants so that your care stays personal.</p></div><blockquote>“This is not an academic program or classroom immersion. It is about receiving Ayurveda personally.”</blockquote></div></section>
+<section class="sec"><div class="num">02</div><div><h2>What your stay includes</h2><ol class="list">
+<li>Personalized consultation with Ayurvedic physicians</li><li>Individualized Panchakarma therapies</li><li>Daily physician follow-up and adjustments</li><li>Traditional herbal support, when recommended</li><li>Therapeutic vegetarian meals, freshly prepared</li><li>Daily yoga, breathwork and relaxation</li><li>Marma therapy and traditional Kerala therapies</li><li>Physiotherapy and rehabilitation, when appropriate</li><li>Time for rest, reflection and rejuvenation</li><li>Herbal gardens and the Vaidyaratnam Museum</li><li>Kerala temple and cultural exposure</li><li>Group excursions on Day 1 and Day 15</li></ol></div></section>
+<section class="sec"><div class="num">03</div><div><h2>Why Kerala</h2><div class="reasons"><div><h3>Built around you</h3><p>Your constitution and needs shape every treatment.</p></div><div><h3>Care you can trust</h3><p>Physicians follow up with you every single day.</p></div><div><h3>Time to truly rest</h3><p>Fifteen days away from digital overload, everything arranged.</p></div><div><h3>One clear price</h3><p>Flights and visa fees are the only major costs outside it.</p></div></div></div></section>
+<section class="sec" id="reserve"><div class="num">04</div><div><h2>Reserve your place</h2><div class="price">
+<div class="tier"><h3>Shared occupancy</h3><div class="amt">$2,500</div><ul><li>Twin room with another guest</li><li>All treatments, meals &amp; transfers</li></ul><a class="btn" href="#">Reserve shared</a></div>
+<div class="tier feat"><h3>Single occupancy</h3><div class="amt">$3,000</div><ul><li>Private room</li><li>All treatments, meals &amp; transfers</li></ul><a class="btn" href="#">Reserve single</a></div></div>
+<p class="fine">Per person. A $200 deposit holds your seat. Not included: airfare to Kochi, visa fees, personal expenses.</p></div></section>
+<section class="sec"><div class="num">05</div><div><h2>Your care team</h2><div class="people">
+<div><img src="https://www.hua.edu/wp-content/uploads/2026/11/Astavaidyan-Dr.-E.T.-Krishnan-Moos.jpg" alt="" loading="lazy"><h3>Astavaidyan Dr. E.T. Krishnan Moos</h3><p>Executive Director, Vaidyaratnam</p></div>
+<div><img src="https://www.hua.edu/wp-content/uploads/2026/03/Dr.-Mahadevan-Seetharaman-1.png" alt="" loading="lazy"><h3>Dr. Mahadevan Seetharaman</h3><p>Dean, California College of Ayurveda</p></div>
+<div><img src="https://www.hua.edu/wp-content/uploads/2026/03/Vaidya-Rupali-Panse.png" alt="" loading="lazy"><h3>Vaidya Rupali Panse</h3><p>Ayurvedic physician</p></div>
+<div><img src="https://www.hua.edu/wp-content/uploads/2026/03/Vaidya-Vandana-Baranwal.png" alt="" loading="lazy"><h3>Vaidya Vandana Baranwal</h3><p>Ayurvedic physician</p></div></div></div></section>
+<section class="sec"><div class="num">06</div><div><h2>From past guests</h2><div class="vids">
+<a href="https://youtu.be/l_raNQoQgRw">Shri Karthik ShyamSundar<span>Watch ↗</span></a><a href="https://youtu.be/apQVVuE13oE">Shri Rajendra &amp; Smt. Daxa Patel<span>Watch ↗</span></a><a href="https://youtu.be/JNhNVPj3p8A">Dr. Aarti Joshi<span>Watch ↗</span></a><a href="https://youtu.be/n2quKYyKZCo">Dr. Ketan Goswami<span>Watch ↗</span></a><a href="https://youtu.be/k28DVZk8rz0">Shri Arun Narayanan<span>Watch ↗</span></a><a href="https://youtu.be/RFlrycnuvF0">Smt. Vandana Tantia<span>Watch ↗</span></a></div>
+<div class="mosaic" style="margin-top:40px"><img src="https://www.hua.edu/wp-content/uploads/2024/12/IMG_0312-1.jpg" alt="" loading="lazy"><img src="https://www.hua.edu/wp-content/uploads/2024/04/IMG_0458.jpg" alt="" loading="lazy"><img src="https://www.hua.edu/wp-content/uploads/2024/12/IMG_0442.jpg" alt="" loading="lazy"></div></div></section>
+<div class="end"><h2>Questions before you go?</h2><p>Call 407 545 5057 or write to info@hua.edu</p><a class="btn alt" href="tel:4075455057">Request a callback</a></div>
+</div></body></html>
